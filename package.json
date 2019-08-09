@@ -1,0 +1,26 @@
+{
+  "name": "@jobteaser/slack-release-notes",
+  "version": "0.0.3",
+  "description": "Post short release notes on Slack from the commit history",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run eslint && npm run unit-test",
+    "unit-test": "jest --coverage",
+    "eslint": "eslint ./src"
+  },
+  "author": "",
+  "license": "ISC",
+  "bin": {
+    "slack-release-notes": "./index.js"
+  },
+  "dependencies": {
+    "minimist": "^1.2.0",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.1.0",
+    "eslint-config-jobteaser": "jobteaser/eslint-config-jobteaser#0.2.4",
+    "eslint-plugin-jest": "^22.15.2",
+    "jest": "^24.8.0"
+  }
+}
